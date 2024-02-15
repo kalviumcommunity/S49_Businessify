@@ -1,0 +1,11 @@
+{
+  "name": "s49_businessify",
+  "version": "1.0.0",
+  "description": "- Providing insights about profitable businesses.\r - A quick guide for new and future entrepreneurs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
