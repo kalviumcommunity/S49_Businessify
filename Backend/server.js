@@ -1,17 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const routes = require('./routes');
 require('dotenv').config();
 
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 8001;
+app.use("/",routes)
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
-})
+mongoose.connect(process.env.MONGO_URL)
 .then(() => {
     console.log('Connected to MongoDB');
 })
