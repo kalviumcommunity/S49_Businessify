@@ -1,16 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css'; // Assuming you have an App.css file for styling
+import Data from './components/Data'; // Importing the Data component
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    <h1>WELCOME TO BUSINESSIFY</h1>
-    </>
-  )
-}
+    <div className="app">
+      <h1>Profitable business companies of the year</h1>
+      <Data /> {/* Rendering the Data component */}
+    </div>
+  );
+};
 
-export default App
+export default App;
